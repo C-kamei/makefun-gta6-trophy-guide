@@ -3,23 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>GTA VI Trophy Guide &amp; Tracker — all 55 PS5 trophies</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="masthead">
+  <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; 55 TROPHIES</p>
+  <h1>The Leonida Trophy Guide</h1>
+  <p class="subtitle">Every official trophy with its guide, a roadmap to the platinum, and a tracker that remembers your progress. Works fully offline — no network requests, ever.</p>
+  <div class="progress-wrap" aria-label="Progress to platinum">
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+    <p id="progress-text" class="progress-text">0 of 55 earned — 0%</p>
+    <p id="grade-counts" class="grade-counts"></p>
+  </div>
 </header>
-<div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
-  <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-</div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
+
+<section class="controls" aria-label="Filters">
+  <label class="field">Search <input id="search" type="search" placeholder="Trophy name or description…"></label>
+  <label class="field">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum (1)</option>
+      <option value="gold">Gold (2)</option>
+      <option value="silver">Silver (6)</option>
+      <option value="bronze">Bronze (46)</option>
+    </select>
+  </label>
+  <label class="field">Category
+    <select id="category">
+      <option value="all">All categories</option>
+      <option value="story">Story</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="missable">Missable</option>
+    </select>
+  </label>
+  <label class="check"><input id="earned-only" type="checkbox"> Earned only</label>
+  <label class="check"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+  <button id="export" type="button">Export progress (JSON)</button>
+  <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  <button id="reset" type="button">Reset progress</button>
+</section>
+
+<section class="panel detail" id="detail" hidden aria-label="Trophy guide detail"></section>
+
+<p id="result-count" class="result-count"></p>
+<main id="trophy-list" class="trophy-list" aria-label="Trophy checklist"></main>
+
+<section class="panel" id="roadmap-panel" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p class="honesty">Built only from the official trophy descriptions. GTA VI released 19 November 2026 and no verified step-by-step guide exists yet, so this guide invents no locations, NPCs or step sequences — each trophy's guide says what the description asks and how to approach it in general terms, with its source cited.</p>
+  <ol class="roadmap">
+    <li><strong>Stage 1 — Story, Chapters 1–4.</strong> Play the story in order: opening mission <em>Gone Fishing</em>, then Chapters 1, 2, 3 and 4, with the named missions (Breakfast Run, The Cartel Heist, Child's Play, Headliners, VCIA Takedown, Operation Savage Glory) along the way. Every one of these trophies is awarded on completion and cannot be missed.</li>
+    <li><strong>Stage 2 — Contact &amp; stranger strands.</strong> Finish the final mission for each contact — Andy, Kenton, Billy, Randy, Tyrone — and complete 8 stranger mission strands across Leonida. Strands stay open once unlocked, so none is missable.</li>
+    <li><strong>Stage 3 — Activities &amp; counts.</strong> Sample all 9 activity types, then work the counted trophies: 250 stunts, 42 Shooting Range gold medals, 20 race wins, 14 Top Fun drone-race wins, 50 challenges, 5 Combat Focus takedowns in one use, and the wanted-level, robbery and money trophies. Everything here is retryable.</li>
+    <li><strong>Stage 4 — Collectibles &amp; exploration.</strong> 3 card sets, WAiNK It at 100 locations, 18 meditation spots, 100 vehicles discovered, 10 registered to Scooter Bros, 8 garages bought, and all 52 areas of Leonida explored. Sweep region by region; nothing closes.</li>
+    <li><strong>Stage 5 — Finale &amp; 100%.</strong> Complete the final mission (gold), then mop up anything left until the game reads 100% completion (gold). The platinum, <em>Vice Got a Price!</em>, unlocks automatically with it.</li>
+  </ol>
+  <p class="missable-note"><strong>Missable trophies: none.</strong> No official description states a one-time condition. Story trophies unlock on completion; every activity, collectible and counted trophy can be attempted again after it unlocks. If a verified guide later shows a one-time condition, this note will be corrected — until then, nothing here is flagged missable.</p>
+</section>
+
+<footer class="footnote">
+  <p>Sources: every trophy's name, description and grade are as PlayStation publishes them, via Exophase — Grand Theft Auto VI trophies (PSN) and PSNProfiles, 2026-11-18. Each guide is written for this page from the official description; no Rockstar artwork or logo is used.</p>
+  <p>Progress is saved in your browser only (localStorage) and can be exported or imported as JSON. Nothing leaves your device.</p>
+</footer>
 <script type="module" src="app.js"></script>
 </body>
 </html>
