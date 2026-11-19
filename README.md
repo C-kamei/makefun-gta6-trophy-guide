@@ -1,8 +1,8 @@
 # makefun-gta6-trophy-guide
 
-[![make.fun](https://img.shields.io/badge/make.fun-gta6--trophy--guide--01-blue)](https://make.fun/c/gta6-trophy-guide-01)
-[![owner](https://img.shields.io/badge/owner-C--kamei-lightgrey)](https://github.com/C-kamei/makefun-gta6-trophy-guide)
-[![repo](https://img.shields.io/badge/repo-makefun--gta6--trophy--guide-green)](https://github.com/C-kamei/makefun-gta6-trophy-guide)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/C-kamei/makefun-gta6-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/C-kamei/makefun-gta6-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5 (1 platinum, 2 gold, 6 silver, 46 bronze). Every trophy shows its official name, description and grade, plus a guide written in this project's own words with its source cited. The tracker saves your checklist in the browser, filters by grade, category, text and earned-only, hides story spoilers until a trophy is earned, and exports/imports progress as JSON. A five-stage roadmap leads to the platinum, and the missable-trophy verdict is honest: no official description states a one-time condition, so none is flagged missable.
 
